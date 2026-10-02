@@ -1,0 +1,30 @@
+:root{--ink:#14161A;--paper:#F5F5F2;--card:#fff;--amber:#FFC400;--deep:#924B00;--muted:#5B606B;--line:#E2E3E6}
+@media (prefers-color-scheme:dark){:root{--paper:#0F1114;--card:#181B20;--ink:#F2F3F5;--muted:#A3A8B3;--line:#2A2E35;--deep:#FFD54A}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--deep)}
+header{background:#14161A;color:#fff}
+.bar{max-width:760px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-.2px}
+.brand svg{width:30px;height:30px}.brand b{color:#FFC400}
+nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:#D7DAE0;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:15px}
+nav a[aria-current]{background:#262A31;color:#fff}
+nav a.lang{border:1px solid #3A3F48}
+main{max-width:760px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:32px;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.4px}
+h2{font-size:21px;margin:1.8em 0 .4em}h3{font-size:17px;margin:1.4em 0 .2em}
+.meta{color:var(--muted);font-size:14px;margin-top:0}
+.lead{font-size:19px}
+ul{padding-left:1.2em}li{margin:.25em 0}
+.hero{text-align:center;padding:24px 0 8px}
+.hero .mark svg{width:120px;height:120px}
+.hero h1{font-size:40px}
+.soon{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-weight:600}
+.features{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:28px 0}
+.features li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0}
+.features strong{display:block}.features span{color:var(--muted);font-size:15px}
+.small{color:var(--muted);font-size:14px;text-align:center}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer div{max-width:760px;margin:0 auto;padding:18px 20px}
+@media (max-width:520px){h1{font-size:27px}.hero h1{font-size:32px}nav{margin-left:0;width:100%}}
